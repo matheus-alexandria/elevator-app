@@ -4,6 +4,7 @@ export class Elevator {
 
   constructor(floorsAmount: number) {
     this.floorsAmount = floorsAmount;
+    this.floor = 0;
   }
 
   call(currentFloor: number) {
@@ -12,5 +13,9 @@ export class Elevator {
 
   getFloor() {
     return this.floor;
+  }
+
+  getFloorsAmount() {
+    return this.floorsAmount;
   }
 }
